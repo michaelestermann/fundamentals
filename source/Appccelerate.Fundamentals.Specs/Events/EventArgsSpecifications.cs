@@ -33,24 +33,24 @@ namespace Appccelerate.Events
         {
             const int Value = 42;
 
-            "establish a publisher firing an event with generic event args"._(() =>
+            "establish a publisher firing an event with generic event args".x(() =>
                 {
                     publisher = new Publisher();
                 });
 
-            "establish a subscriber listening to the event of the publisher"._(() =>
+            "establish a subscriber listening to the event of the publisher".x(() =>
                 {
                     subscriber = new Subscriber();
 
                     subscriber.RegisterEvent(publisher);
                 });
 
-            "when the publisher fires the event"._(() =>
+            "when the publisher fires the event".x(() =>
                 {
                     publisher.FireEvent(Value);
                 });
 
-            "it should pass value to event handler"._(() =>
+            "it should pass value to event handler".x(() =>
                 {
                     subscriber.ReceivedValue
                         .Should().Be(Value);

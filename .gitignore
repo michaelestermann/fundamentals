@@ -15,3 +15,7 @@ source/Appccelerate.sln.DotSettings
 source/packages/*
 logs/ripple.log
 Specs/
+
+source/.idea/.idea.Appccelerate.Fundamentals/riderModule.iml
+
+source/.idea/.idea.Appccelerate.Fundamentals/.idea/
